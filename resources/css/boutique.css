@@ -1,0 +1,388 @@
+
+
+/* ========================================== #container-boutique main ============================================ */
+#container-boutique main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+
+/* ================================== service ============================== */
+
+#container-boutique main .services{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#container-boutique main .services div:first-child{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    gap:20px 5px;
+    padding: 1rem;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+#container-boutique main .services div:first-child h1{
+    color: var(--color-green-medium);
+}
+
+#container-boutique main .services div:first-child div:nth-child(2) a{
+    font-size: 0.75rem;
+    color: var(--color-black-logo);
+    margin-left: 60%;
+}
+
+#container-boutique main .services div:first-child div:last-child{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-black-logo) 100%); ;
+    border-radius: 10px;
+}
+
+#container-boutique main .services div:first-child div:last-child img{
+    width: 150%;
+}
+
+/* ================================================  livres ========================================== */
+
+#container-boutique main .livres{
+    width: 58%;
+}
+
+#container-boutique main .livres .card{
+    width: 100%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#container-boutique main .livres .card .row{
+    padding: 1rem 2rem;
+}
+
+#container-boutique main .livres .card .row h4{
+    font-weight: 600;
+    color: var(--color-green-medium);
+}
+
+#container-boutique main .livres .card .row p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #344767c3;
+}
+
+#container-boutique main .livres .card .table{
+    width: 100%;
+    color: #67748e;
+  }
+  
+  #container-boutique main .livres .card .table th{
+      text-align: left;
+      border-bottom: 1px solid #e9ecef;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.78rem;
+      color: #8392AB;
+      opacity: 0.7;
+      text-transform: uppercase;
+  }
+
+
+#container-boutique main .livres .card .table tr{
+    margin-bottom: 1rem;
+}
+
+#container-boutique main .livres .card .table tr td{
+    border-bottom: 1px solid #e9ecef;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+#container-boutique main .livres .card .table tr td:last-child a{
+    text-decoration: none;
+}
+
+#container-boutique main .livres .card .table tr td:last-child a:first-child{
+    color: rgba(36, 36, 214, 0.814);
+}
+
+#container-boutique main .livres .card .table tr td:last-child a:last-child{
+    color: var(--color-red);
+}
+
+#container-boutique main .livres .card .table tr .progress>span{
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 80%;
+  height: 10px;
+  display: block;
+}
+
+#container-boutique main .livres .card .table tr .progress>span span{
+  background-image: linear-gradient(-90deg, green 0%,red 100%);
+  border-radius: 50px;
+  /* width: 60%; */
+  height: 100%;
+  display: block;
+}
+
+#container-boutique main .livres .card .table tr td:first-child a{
+    color: var(--color-green-medium);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#container-boutique main .livres .card .table tr td:first-child a:hover{
+    color: var(--color-green-yellow);
+  
+}
+
+
+/* =====footer table ========= */
+#container-boutique main .livres .table_footer{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+#container-boutique main .livres  .next, #container-boutique main .livres .previous{
+    border-radius: 10px;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.1s ease-in;
+  }
+
+ #container-boutique main .livres  .previous:hover{
+    transform: translateX(-5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+}
+ 
+#container-boutique main .livres .next:hover{
+    transform: translateX(5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+  
+ #container-boutique main .livres #pagination{
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+ #container-boutique main .livres .ligne:hover{
+      background-color: #ccc;
+  }
+  
+#container-boutique main .livres  .page{
+      color: var(--color-white);
+      padding: 5px 16px;
+      border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+  }
+#container-boutique main .livres  .active_page{
+    background-image: linear-gradient(310deg,  var(--color-green-yellow) 0%, var(--color-green-medium) 100%);
+  }
+
+#container-boutique main .livres  .page:hover{
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+
+  
+  /* =================  select ====================================== */
+
+
+  #container-boutique main .livres .select{
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    padding: 1rem;
+  }
+
+  #container-boutique main .livres .select .resume{
+    width: 65%;
+    height: 460px;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow-y: scroll;
+    color: var(--color-white);
+    background:linear-gradient(310deg, #141727a1 0%, #3a416fa2 100%), url(../img/ivancik.jpg) center center ;
+    background-size: cover;
+  }
+
+  #container-boutique main .livres .select .info{
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+  }
+
+  #container-boutique main .livres .select .info h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-green-medium);
+  }
+ 
+  #container-boutique main .livres .select .info p{
+    font-weight: 600;
+    color: var(--color-black-logo);
+  }
+ 
+  #container-boutique main .livres .select .info p i{
+    font-weight: 800;
+    color: var(--color-green-bold);
+  }
+
+  #container-boutique main .livres .select .info form .add-panier{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 90%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: var(--color-red);
+    border: none;
+    color: var(--color-white);
+    transition: 0.2s ease-in;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  #container-boutique main .livres .select .info form .add-panier:hover{
+    background-color: var(--color-green-medium);
+    transform: scale(1.05);
+  }
+
+  #container-boutique main .livres .panier{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    margin: 50px 0;
+    position: relative;
+    padding: 1rem;
+  }
+
+  #container-boutique main .livres .panier p{
+    position: absolute;
+    top: 35%;
+    font-size: 1.3rem;
+  }
+
+  #container-boutique main .livres .panier p span{
+    color: var(--color-green-medium);
+    font-weight: 600;
+  }
+
+  #container-boutique main .livres .panier form .add-panier{
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+    width: 40%;
+    height: 80px;
+    border-radius: 15px;
+    background-color: var(--color-red);
+    border: none;
+    color: var(--color-white);
+    transition: 0.2s ease-in;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  #container-boutique main .livres .panier form .add-panier:hover{
+    background-color: var(--color-green-medium);
+    transform: scale(1.05);
+  }
+
+
+
+/* ==================================================== commentaires =========================================== */
+#container-boutique main .section-commentaires{
+    background-color: var(--color-white);
+    border-radius:10px ;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    overflow-y: scroll;
+    width: 20%;
+    margin-left: 20px;
+}
+
+#container-boutique main .section-commentaires h1{
+    font-size: 1.2rem;
+    color: var(--color-green-medium);
+}
+
+#container-boutique main .section-commentaires .commentaires {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px 0px;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire{
+    display: flex;
+    width: 100%;
+    gap: 0px 20px;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire img{
+   width: 60px;
+   height: 40px;
+   background-color: #ccc;
+   border-radius: 50%;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire .cmt{
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0px;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire .cmt h5{
+  color: #344767;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire .cmt span{
+  font-size: 0.6rem;
+}
+
+#container-boutique main .section-commentaires .commentaires .commentaire .cmt span:last-child{
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #8392AB;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,55 @@
+#confirme-delete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.65); /* pour l'effet d'obscurcissement */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+}
+
+#modal {
+    background-color: rgb(35, 128, 35);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#modal div{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+#modal div a:last-child{
+    padding: 0.1rem 1rem;
+    background: rgb(175, 51, 51);
+    border-radius: 10px;
+    /* text-decoration: none; */
+    color: white;
+}
+
+#modal div a:last-child:hover{
+    background: rgb(227, 17, 17);
+}
+
+#modal div a:first-child{
+    color: white;
+    padding: 0.1rem 1rem;
+    background: rgb(59, 51, 175);
+    border-radius: 10px;
+}
+#modal div  a:first-child:hover{
+    padding: 0.1rem 1rem;
+    background: rgb(32, 18, 224);
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+}

@@ -1,0 +1,203 @@
+
+/* ========================================== #container-book_register main ============================================ */
+#container-book_register main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/* ============================ form ============================== */
+#container-book_register main .register{
+    width: 40%;
+}
+
+#container-book_register main .register .card{
+    width: 100%;
+    /* height: 350px; */
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+
+#container-book_register main .register .card h1{
+    font-size: 1.2rem;
+    color: var(--color-green-medium);
+}
+
+#container-book_register main .register .card form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#container-book_register main .register .card form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container-book_register main .register .card form div input{
+    width: 100%;
+    border: 1px solid var(--color-green-yellow);
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 15px;
+    color: var(--color-black-logo);
+}
+
+#container-book_register main .register .card form> input{
+    width: 60%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--color-red);
+    border: none;
+    margin-top: 8px;
+    color: var(--color-white);
+    transition: 0.2s ease-in;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#container-book_register main .register .card form> input:hover{
+    background-color: var(--color-green-medium);
+    transform: scale(1.05);
+}
+
+
+
+/* =============================================== table ======================================= */
+
+#container-book_register main .missing{
+    width: 48%;
+}
+
+#container-book_register main .missing .card{
+    width: 100%;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#container-book_register main .missing .card .row{
+    padding: 1rem 2rem;
+}
+
+#container-book_register main .missing .card .row h4{
+    font-weight: 600;
+    color: var(--color-red);
+}
+
+#container-book_register main .missing .card .row p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #344767c3;
+}
+
+#container-book_register main .missing .card .table{
+    width: 100%;
+    color: #67748e;
+}
+
+#container-book_register main .missing .card .table tr{
+    margin-bottom: 1rem;
+}
+
+#container-book_register main .missing .card .table tr td{
+    border-bottom: 1px solid #e9ecef;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+#container-book_register main .missing .card .table tr .progress>span{
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 80%;
+  height: 10px;
+  display: block;
+}
+
+#container-book_register main .missing .card .table tr .progress>span span{
+  background-image: linear-gradient(-90deg, green 0%,red 100%);
+  border-radius: 50px;
+  /* width: 60%; */
+  height: 100%;
+  display: block;
+}
+
+#container-book_register main .missing .card .table th{
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.78rem;
+    color: #8392AB;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+/* =====footer table ========= */
+#container-book_register main .missing .table_footer{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+#container-book_register main .missing  .next, #container-book_register main .missing .previous{
+    border-radius: 10px;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.1s ease-in;
+  }
+
+ #container-book_register main .missing  .previous:hover{
+    transform: translateX(-5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+}
+ 
+#container-book_register main .missing .next:hover{
+    transform: translateX(5px);
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
+  
+ #container-book_register main .missing #pagination{
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+ #container-book_register main .missing .ligne:hover{
+      background-color: #ccc;
+  }
+  
+#container-book_register main .missing  .page{
+      color: var(--color-white);
+      padding: 5px 16px;
+      border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-medium) 100%);
+  }
+#container-book_register main .missing  .active_page{
+    background-image: linear-gradient(310deg,  var(--color-green-yellow) 0%, var(--color-green-medium) 100%);
+  }
+
+#container-book_register main .missing  .page:hover{
+    background-image: linear-gradient(310deg, var(--color-green-bold) 0%, var(--color-green-yellow) 100%);
+  }
