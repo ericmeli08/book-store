@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\commentaires;
+use App\Models\Commentaires;
 use App\Models\Livres;
 use Illuminate\Http\Request;
 
