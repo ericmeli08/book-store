@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('commentaires', function (Blueprint $table) {
             $table->id();
             $table->string('email',191);
-            $table->foreign('email')->references('email')->on('livres')->onDelete('cascade');
+            $table->foreign('email')->references('email')->on('users')->onDelete('cascade');
             $table->string('commentaire',150);
             $table->timestamps();
         });
