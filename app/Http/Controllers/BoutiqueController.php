@@ -17,7 +17,7 @@ class BoutiqueController extends Controller
         }
         $book = Livres::find($id);
 
-        $commentaires = commentaires::all();
+        $commentaires = Commentaires::all();
         if(isset($commentaires['commentaire'])){
             $commentaires = [$commentaires];
         }
